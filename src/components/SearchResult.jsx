@@ -8,7 +8,7 @@ import ErrorMsg from './ErrorMsg';
 function SearchResult() {
   const appContext = useContext(WeatherContext);
   const {
-    currWeather, search, error, errorMsg,
+    currWeather, error, errorMsg,
   } = appContext;
 
   console.log(currWeather);
@@ -51,7 +51,10 @@ function SearchResult() {
             <Flex>
               <Box><Text>Humidity</Text></Box>
               <Spacer />
-              <Box>{data.main.humidity}%</Box>
+              <Box>
+                {data.main.humidity}
+                %
+              </Box>
             </Flex>
             <Flex>
               <Box><Text>Time:</Text></Box>
@@ -63,7 +66,7 @@ function SearchResult() {
       </Box>
     );
   } if (error) {
-    WeatherRes = <ErrorMsg msg={errorMsg} bg="red.800" color="gray.200"/>;
+    WeatherRes = <ErrorMsg msg={errorMsg} bg="red.800" color="gray.200" />;
   }
 
   return (<div>{WeatherRes}</div>);

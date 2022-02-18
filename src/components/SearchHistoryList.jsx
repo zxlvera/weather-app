@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-  Box, VStack, StackDivider
+  Box, VStack, StackDivider,
 } from '@chakra-ui/react';
 import { WeatherContext } from '../utilities/WeatherContext';
 import HistoryItem from './HistoryItem';
@@ -27,7 +27,7 @@ function SearchHistoryList() {
       </VStack>
     );
   } else {
-    HistoryList = <ErrorMsg msg="No Records" bg="gray.300" color="gray.600"/>;
+    HistoryList = <ErrorMsg msg="No Records" bg="gray.300" color="gray.600" />;
   }
   return (
     <Box>
