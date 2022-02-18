@@ -1,9 +1,9 @@
 import { Box, Container } from '@chakra-ui/react';
 import { WeatherProvider } from './utilities/WeatherContext';
 import Header from './components/Header';
-import SearchLocation from './components/SearchLocation';
-import SearchResult from './components/SearchResult';
-import SearchHistoryList from './components/SearchHistoryList';
+import SearchCard from './components/SearchCard';
+import WeatherCard from './components/WeatherCard';
+import HistoryList from './components/HistoryList';
 
 function App() {
   return (
@@ -11,10 +11,10 @@ function App() {
       <WeatherProvider>
         <Container maxW="container.xl" p="4">
           <Header text="Today's Weather" />
-          <SearchLocation />
-          <Box pt="4"><SearchResult /></Box>
+          <SearchCard />
+          <Box pt="4"><WeatherCard /></Box>
           <Header text="Search History" />
-          <SearchHistoryList />
+          <HistoryList />
         </Container>
       </WeatherProvider>
     </Box>

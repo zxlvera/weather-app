@@ -5,13 +5,11 @@ import {
 import { WeatherContext } from '../utilities/WeatherContext';
 import ErrorMsg from './ErrorMsg';
 
-function SearchResult() {
+function WeatherCard() {
   const appContext = useContext(WeatherContext);
   const {
     currWeather, error, errorMsg,
   } = appContext;
-
-  console.log(currWeather);
 
   let WeatherRes;
   if (currWeather.length > 0) {
@@ -72,4 +70,4 @@ function SearchResult() {
   return (<div>{WeatherRes}</div>);
 }
 
-export default SearchResult;
+export default WeatherCard;

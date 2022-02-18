@@ -6,15 +6,15 @@ import { WeatherContext } from '../utilities/WeatherContext';
 import HistoryItem from './HistoryItem';
 import ErrorMsg from './ErrorMsg';
 
-function SearchHistoryList() {
+function HistoryList() {
   const appContext = useContext(WeatherContext);
   const {
     history,
   } = appContext;
 
-  let HistoryList;
+  let HistoryItems;
   if (history.length > 0) {
-    HistoryList = (
+    HistoryItems = (
       <VStack
         divider={<StackDivider borderColor="gray.800" />}
         spacing={4}
@@ -27,13 +27,13 @@ function SearchHistoryList() {
       </VStack>
     );
   } else {
-    HistoryList = <ErrorMsg msg="No Records" bg="gray.300" color="gray.600" />;
+    HistoryItems = <ErrorMsg msg="No Records" bg="gray.300" color="gray.600" />;
   }
   return (
     <Box>
-      { HistoryList }
+      { HistoryItems }
     </Box>
   );
 }
 
-export default SearchHistoryList;
+export default HistoryList;

@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { WeatherContext } from '../utilities/WeatherContext';
 
-function SearchLocation() {
+function SearchCard() {
   const appContext = useContext(WeatherContext);
   const { search, searchLocation } = appContext;
 
@@ -70,4 +70,4 @@ function SearchLocation() {
   );
 }
 
-export default SearchLocation;
+export default SearchCard;
