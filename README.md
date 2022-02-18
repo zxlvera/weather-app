@@ -1,20 +1,18 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+  - [Built With](#built-with)
+  - [Features](#features)
+  - [How to use](#how-to-use)
+  - [Contact](#contact)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This weather app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm start`
+[Live Demo](https://weather-app-01f6fb.netlify.app/)
 
-### Tech Stack used
-- [Chakra UI](https://chakra-ui.com/)
-- React
-- axios 
-- [OpenWeather](https://openweathermap.org/)
-
-### Preview
 #### Search for city or country
 ![](images/Screenshot_1.png)
 
@@ -28,3 +26,29 @@ In the project directory, you can run:
 - User can track their search history
 - User can query again from search history
 - User can remove past searches from search history
+
+## How To Use
+
+<!-- Example: -->
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+### Built With
+- [Chakra UI](https://chakra-ui.com/)
+- [React](https://reactjs.org/)
+- [OpenWeather API](https://openweathermap.org/)
+
+## Contact
+- GitHub [@zxlvera](https://github.com/zxlvera)
+- [LinkedIn](https://www.linkedin.com/in/zxlvera/)
+
